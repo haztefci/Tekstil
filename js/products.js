@@ -183,7 +183,9 @@ window.PRODUCTS = [
         "price":  550,
         "badge":  null,
         "images":  [
-                       "images/catalog/shorts.jpg"
+                       "images/catalog/sort1.jpg",
+            "images/catalog/sort2.jpg",
+            "images/catalog/sort3.jpg"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
