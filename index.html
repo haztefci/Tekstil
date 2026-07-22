@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Doku Atölye dijital ürün kataloğu — üst giyim ve alt giyim koleksiyonları.">
+  <meta name="theme-color" content="#f2efe9">
+  <title>Doku Atölye | Dijital Ürün Kataloğu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/textile.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Kataloğa geç</a>
+
+  <header class="site-header">
+    <a class="brand institution-brand" href="#top" aria-label="Bursa E Tipi Kapalı ve Açık Ceza İnfaz Kurumu İşyurdu Müdürlüğü ana sayfa">
+      <span class="brand-logos" aria-hidden="true"><img src="images/adalet.png" alt=""><img src="images/iydb.png" alt=""></span>
+      <span class="institution-name">Bursa E Tipi Kapalı ve Açık Ceza İnfaz Kurumu <b>İşyurdu Müdürlüğü</b></span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a href="#catalog">Katalog</a>
+      <a class="header-cta" href="order.html">Sipariş ver <span>→</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-toolbar">
+        <div>
+          <p class="eyebrow"><span></span> Koleksiyon</p>
+          <h2 id="catalog-title">Tüm ürünler</h2>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Ürün ara</span>
+          <input id="product-search" type="search" placeholder="Ürün ara..." autocomplete="off">
+        </label>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="catalog-sidebar" aria-label="Ürün filtreleri">
+          <button class="side-filter active" type="button" data-filter="all"><span>Tüm ürünler</span><b>07</b></button>
+          <div id="category-filters"></div>
+          <details class="sidebar-note">
+            <summary>
+              <span>Özel üretim</span>
+              <p>Özel üretim ve toplu üretim yaptırmak isteyenler</p>
+              <b>Bilgi alın <i>+</i></b>
+            </summary>
+            <div class="sidebar-contact">
+              <span>İletişim numarası</span>
+              <a href="tel:+902242428471">0224 242 84 71</a>
+            </div>
+          </details>
+        </aside>
+
+        <div class="catalog-results">
+          <div class="mobile-filters" aria-label="Hızlı filtreler">
+            <button class="active" type="button" data-filter="all">Tümü</button>
+            <button type="button" data-filter="ust">Üst Giyim</button>
+            <button type="button" data-filter="alt">Alt Giyim</button>
+          </div>
+          <div class="result-meta"><span id="result-count">7 ürün</span><span>Ürüne tıklayarak detayları görün</span></div>
+          <div class="product-grid" id="product-grid"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span>⌕</span><h3>Ürün bulunamadı</h3><p>Aramanızı değiştirerek tekrar deneyin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div><a href="tel:+902242428471">0224 242 84 71</a><a href="mailto:etipicikisyurdu@hotmail.com">etipicikisyurdu@hotmail.com</a><span>Balat Mah. Cezaevi Cad. No:100 Nilüfer, Bursa</span></div>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="detail-name">
+    <button class="dialog-close" type="button" aria-label="Ürün detayını kapat">×</button>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <div class="detail-main-image"><img id="detail-image" src="" alt=""></div>
+        <div class="detail-thumbs" id="detail-thumbs" aria-label="Ürün fotoğrafları"></div>
+        <div class="gallery-counter"><span id="gallery-current">01</span> / <span id="gallery-total">01</span></div>
+      </div>
+      <div class="detail-info">
+        <div class="detail-breadcrumb"><span id="detail-group"></span><i>—</i><span id="detail-type"></span></div>
+        <h2 id="detail-name"></h2>
+        <p class="detail-code" id="detail-code"></p>
+        <p class="detail-description" id="detail-description"></p>
+
+        <div class="detail-colors"><span>Renkler</span><div id="detail-colors"></div></div>
+        <div class="detail-sizes"><span>Bedenler</span><div id="detail-sizes"></div></div>
+
+        <dl class="spec-list">
+          <div><dt>Kumaş</dt><dd id="detail-fabric"></dd></div>
+          <div><dt>Gramaj</dt><dd id="detail-weight"></dd></div>
+          <div><dt>Kalıp</dt><dd id="detail-fit"></dd></div>
+          <div><dt>Fiyat</dt><dd id="detail-price"></dd></div>
+        </dl>
+
+        <details class="care-info">
+          <summary>Bakım bilgisi <span>+</span></summary>
+          <p id="detail-care"></p>
+        </details>
+        <a class="detail-cta" id="detail-cta" href="order.html">Sipariş ver <span>→</span></a>
+        <p class="detail-note">Minimum sipariş ve termin bilgisi için iletişime geçin.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/products.js"></script>
+  <script src="js/textile.js"></script>
+</body>
+</html>

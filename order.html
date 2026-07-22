@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Doku Atölye ürün sipariş formu.">
+  <meta name="theme-color" content="#f2efe9">
+  <title>Sipariş Ver | Doku Atölye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/textile.css">
+  <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand institution-brand" href="index.html" aria-label="Bursa E Tipi Kapalı ve Açık Ceza İnfaz Kurumu İşyurdu Müdürlüğü ana sayfa">
+      <span class="brand-logos" aria-hidden="true"><img src="images/adalet.png" alt=""><img src="images/iydb.png" alt=""></span>
+      <span class="institution-name">Bursa E Tipi Kapalı ve Açık Ceza İnfaz Kurumu <b>İşyurdu Müdürlüğü</b></span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a href="index.html">Katalog</a>
+      <a class="header-cta" href="order.html" aria-current="page">Sipariş ver <span>→</span></a>
+    </nav>
+  </header>
+
+  <main class="order-page">
+    <form id="order-form" class="order-form">
+      <section class="customer-section" aria-labelledby="customer-title">
+        <div class="form-section-title">
+          <span>01</span>
+          <div><h2 id="customer-title">Sipariş bilgileri</h2><p>Yıldızlı alanların doldurulması zorunludur.</p></div>
+        </div>
+        <div class="customer-fields">
+          <label>Kurum adı <b>*</b><input name="institution" type="text" required autocomplete="organization"></label>
+          <label>Ad soyad <b>*</b><input name="fullName" type="text" required autocomplete="name"></label>
+          <label>İletişim numarası <b>*</b><input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="05__ ___ __ __"></label>
+        </div>
+      </section>
+
+      <section class="products-section" aria-labelledby="products-title">
+        <div class="form-section-title">
+          <span>02</span>
+          <div><h2 id="products-title">Ürünler</h2><p>Sipariş etmek istediğiniz ürünlerin adetlerini girin.</p></div>
+        </div>
+        <div class="order-table-wrap">
+          <table class="order-table">
+            <thead><tr><th>Ürün kodu</th><th>Ürün</th><th>Sipariş adedi</th><th>Sipariş notu</th></tr></thead>
+            <tbody id="order-products"></tbody>
+          </table>
+        </div>
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <p class="form-status" id="form-status" role="status" hidden></p>
+        <div class="order-submit">
+          <p>Siparişiniz doğrudan bize iletilecektir.</p>
+          <button id="submit-order" type="submit">Siparişi gönder <span>→</span></button>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div><a href="tel:+902242428471">0224 242 84 71</a><a href="mailto:etipicikisyurdu@hotmail.com">etipicikisyurdu@hotmail.com</a><span>Balat Mah. Cezaevi Cad. No:100 Nilüfer, Bursa</span></div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>

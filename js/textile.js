@@ -1,0 +1,119 @@
+const products = window.PRODUCTS.filter((product) => product.active !== false);
+
+const grid = document.getElementById('product-grid');
+const count = document.getElementById('result-count');
+const title = document.getElementById('catalog-title');
+const empty = document.getElementById('empty-state');
+const search = document.getElementById('product-search');
+const dialog = document.getElementById('product-dialog');
+let activeFilter = 'all';
+let activeGallery = [];
+
+const filterLabels = { all: 'Tüm ürünler' };
+const priceFormatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
+const categoryFilters = document.getElementById('category-filters');
+
+const productGroups = new Map();
+products.forEach((product) => {
+  filterLabels[product.group] = product.groupLabel;
+  filterLabels[product.type] = product.typeLabel;
+  if (!productGroups.has(product.group)) productGroups.set(product.group, { label: product.groupLabel, products: [] });
+  productGroups.get(product.group).products.push(product);
+});
+
+categoryFilters.innerHTML = [...productGroups.entries()].map(([groupKey, group]) => {
+  const types = new Map();
+  group.products.forEach((product) => {
+    if (!types.has(product.type)) types.set(product.type, product.typeLabel);
+  });
+  const typeButtons = [...types.entries()].map(([typeKey, typeLabel]) => `<button type="button" data-filter="${typeKey}">${typeLabel}</button>`).join('');
+  return `<div class="filter-group">
+    <button class="side-filter parent" type="button" data-filter="${groupKey}"><span>${group.label}</span><b>${String(group.products.length).padStart(2, '0')}</b></button>
+    <div class="subfilters">${typeButtons}</div>
+  </div>`;
+}).join('');
+
+document.querySelectorAll('.side-filter[data-filter]').forEach((button) => {
+  const filter = button.dataset.filter;
+  const total = filter === 'all' ? products.length : products.filter((product) => product.group === filter || product.type === filter).length;
+  const counter = button.querySelector('b');
+  if (counter) counter.textContent = String(total).padStart(2, '0');
+});
+
+function productCard(product) {
+  return `<button class="product-card" type="button" data-id="${product.id}" aria-label="${product.name} detayını aç">
+    <span class="product-visual"><img src="${product.images[0]}" alt="${product.name}" loading="lazy">${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}<span class="product-open">↗</span></span>
+    <span class="product-copy"><small>${product.groupLabel} / ${product.typeLabel}</small><h3>${product.name}</h3><span>${product.code}</span></span>
+  </button>`;
+}
+
+function renderProducts() {
+  const term = search.value.trim().toLocaleLowerCase('tr-TR');
+  const visible = products.filter((product) => {
+    const matchesFilter = activeFilter === 'all' || product.group === activeFilter || product.type === activeFilter;
+    const haystack = `${product.name} ${product.typeLabel} ${product.code}`.toLocaleLowerCase('tr-TR');
+    return matchesFilter && haystack.includes(term);
+  });
+  grid.innerHTML = visible.map(productCard).join('');
+  count.textContent = `${visible.length} ürün`;
+  title.textContent = term ? 'Arama sonuçları' : filterLabels[activeFilter];
+  empty.hidden = visible.length > 0;
+  grid.hidden = visible.length === 0;
+  grid.querySelectorAll('.product-card').forEach((card) => card.addEventListener('click', () => openProduct(card.dataset.id)));
+}
+
+function setFilter(filter) {
+  activeFilter = filter;
+  document.querySelectorAll('[data-filter]').forEach((button) => button.classList.toggle('active', button.dataset.filter === filter));
+  renderProducts();
+}
+
+document.querySelectorAll('[data-filter]').forEach((button) => button.addEventListener('click', () => setFilter(button.dataset.filter)));
+search.addEventListener('input', renderProducts);
+
+function setGalleryImage(index) {
+  const image = document.getElementById('detail-image');
+  image.src = activeGallery[index];
+  document.getElementById('gallery-current').textContent = String(index + 1).padStart(2, '0');
+  document.querySelectorAll('.detail-thumbs button').forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
+}
+
+function openProduct(id) {
+  const product = products.find((item) => item.id === id);
+  if (!product) return;
+  activeGallery = product.images;
+  document.getElementById('detail-group').textContent = product.groupLabel;
+  document.getElementById('detail-type').textContent = product.typeLabel;
+  document.getElementById('detail-name').textContent = product.name;
+  document.getElementById('detail-code').textContent = `Ürün kodu: ${product.code}`;
+  document.getElementById('detail-description').textContent = product.description;
+  document.getElementById('detail-fabric').textContent = product.fabric;
+  document.getElementById('detail-weight').textContent = product.weight;
+  document.getElementById('detail-fit').textContent = product.fit;
+  document.getElementById('detail-price').textContent = Number.isFinite(product.price) ? priceFormatter.format(product.price) : 'Fiyat bilgisi yakında';
+  document.getElementById('detail-care').textContent = product.care;
+  document.getElementById('detail-colors').innerHTML = product.colors.map((color) => `<span class="color-dot" style="background:${color}" aria-label="Renk seçeneği"></span>`).join('');
+  document.getElementById('detail-sizes').innerHTML = product.sizes.map((size) => `<span class="size-chip">${size}</span>`).join('');
+  document.getElementById('detail-thumbs').innerHTML = product.images.map((src, index) => `<button type="button" data-image-index="${index}" aria-label="${index + 1}. fotoğrafı göster"><img src="${src}" alt=""></button>`).join('');
+  document.getElementById('gallery-total').textContent = String(product.images.length).padStart(2, '0');
+  document.getElementById('detail-image').alt = `${product.name} ürün fotoğrafı`;
+  document.getElementById('detail-cta').href = `order.html?product=${encodeURIComponent(product.code)}`;
+  document.querySelectorAll('.detail-thumbs button').forEach((button) => button.addEventListener('click', () => setGalleryImage(Number(button.dataset.imageIndex))));
+  setGalleryImage(0);
+  dialog.showModal();
+  document.body.classList.add('dialog-open');
+}
+
+function closeDialog() {
+  dialog.close();
+  document.body.classList.remove('dialog-open');
+}
+
+document.querySelector('.dialog-close').addEventListener('click', closeDialog);
+dialog.addEventListener('click', (event) => {
+  const box = dialog.getBoundingClientRect();
+  if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeDialog();
+});
+dialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
+
+renderProducts();
