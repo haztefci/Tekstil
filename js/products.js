@@ -78,10 +78,11 @@ window.PRODUCTS = [
         "typeLabel":  "Taktik Gömlek",
         "name":  "Uzun Kollu Gömlek",
         "code":  "DK-GM-312",
-        "price":  null,
+        "price":  700,
         "badge":  null,
         "images":  [
-                       "images/catalog/shirt.jpg"
+                       "images/catalog/taktikgomlek1.jpg",
+                       "images/catalog/taktikgomlek2.jpg"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
@@ -141,7 +142,7 @@ window.PRODUCTS = [
         "typeLabel":  "Taktik Pantolon",
         "name":  "Taktik Pantolon",
         "code":  "DK-PT-510",
-        "price":  null,
+        "price":  1.100,
         "badge":  "Dayanıklı",
         "images":  [
                        "images/catalog/taktikpantolon1.jpg",
