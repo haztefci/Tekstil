@@ -107,13 +107,15 @@ window.PRODUCTS = [
         "group":  "ust",
         "type":  "mont",
         "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Taktik Mont",
+        "typeLabel":  "Mevsimlik Mont",
         "name":  "Mevsimlik Taktik Mont",
         "code":  "DK-MT-408",
         "price":  null,
         "badge":  null,
         "images":  [
-                       "images/catalog/jacket.jpg"
+                       "images/catalog/mevsimlikmont1.jpg",
+                       "images/catalog/mevsimlikmont2.jpg",
+                        "images/catalog/mevsimlikmont3.jpg"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
