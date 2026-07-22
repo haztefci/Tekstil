@@ -110,7 +110,7 @@ window.PRODUCTS = [
         "typeLabel":  "Mevsimlik Mont",
         "name":  "Mevsimlik Taktik Mont",
         "code":  "DK-MT-408",
-        "price":  null,
+        "price":  1.250,
         "badge":  null,
         "images":  [
                        "images/catalog/mevsimlikmont1.jpg",
