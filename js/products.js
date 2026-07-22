@@ -35,7 +35,7 @@ window.PRODUCTS = [
         "fabric":  "%100 kompakt pamuk",
         "weight":  "200 g/m²",
         "fit":  "Regular fit",
-        "care":  "30Â°C tersten yÄ±kayÄ±nÄ±z. DÃ¼ÅŸÃ¼k Ä±sÄ±da Ã¼tÃ¼leyiniz. Tamburlu kurutma Ã¶nerilmez."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
         "id":  "soft-sweatshirt",
@@ -67,7 +67,7 @@ window.PRODUCTS = [
         "fabric":  "%80 pamuk, %20 polyester",
         "weight":  "320 g/m²",
         "fit":  "Rahat kalıp",
-        "care":  "30Â°C hassas programda benzer renklerle yÄ±kayÄ±nÄ±z."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
         "id":  "keten-gomlek",
@@ -98,7 +98,7 @@ window.PRODUCTS = [
         "fabric":  "%55 keten, %45 pamuk",
         "weight":  "165 g/m²",
         "fit":  "Modern fit",
-        "care":  "30Â°C hassas yÄ±kama. Nemliyken dÃ¼ÅŸÃ¼k Ä±sÄ±da Ã¼tÃ¼leyiniz."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
         "id":  "urban-mont",
@@ -130,7 +130,7 @@ window.PRODUCTS = [
         "fabric":  "Kaplamalı dokuma kumaş",
         "weight":  "380 g/m²",
         "fit":  "Regular fit",
-        "care":  "Kuru temizleme Ã¶nerilir. DoÄŸrudan Ä±sÄ± uygulamayÄ±nÄ±z."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
         "id":  "kanvas-pantolon",
@@ -144,10 +144,10 @@ window.PRODUCTS = [
         "price":  null,
         "badge":  "Dayanıklı",
         "images":  [
-                       "images/catalog/textile/taktikpantolon1.jpg",
-                        "images/catalog/textile/taktikpantolon2.jpg",
-                        "images/catalog/textile/taktikpantolon3.jpg",
-                        "images/catalog/textile/taktikpantolon4.jpg"
+                       "images/catalog/taktikpantolon1.jpg",
+                       "images/catalog/taktikpantolon2.jpg",
+                       "images/catalog/taktikpantolon3.jpg",
+                       "images/catalog/taktikpantolon4.jpg"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
@@ -166,7 +166,7 @@ window.PRODUCTS = [
         "fabric":  "%97 pamuk, %3 elastan",
         "weight":  "285 g/m²",
         "fit":  "Düz kesim",
-        "care":  "30Â°C tersten yÄ±kayÄ±nÄ±z. Renk koruyucu deterjan kullanÄ±nÄ±z."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
         "id":  "denim-sort",
@@ -197,6 +197,6 @@ window.PRODUCTS = [
         "fabric":  "%100 pamuk denim",
         "weight":  "260 g/m²",
         "fit":  "Rahat kesim",
-        "care":  "30Â°C tersten yÄ±kayÄ±nÄ±z. AÄŸartÄ±cÄ± kullanmayÄ±nÄ±z."
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     }
 ];
