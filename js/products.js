@@ -110,7 +110,7 @@ window.PRODUCTS = [
         "typeLabel":  "Mevsimlik Mont",
         "name":  "Mevsimlik Taktik Mont",
         "code":  "DK-MT-408",
-        "price":  1.250,
+        "price":  1250,
         "badge":  null,
         "images":  [
                        "images/catalog/mevsimlikmont1.jpg",
@@ -144,7 +144,7 @@ window.PRODUCTS = [
         "typeLabel":  "Taktik Pantolon",
         "name":  "Taktik Pantolon",
         "code":  "DK-PT-510",
-        "price":  1.100,
+        "price":  1100,
         "badge":  "Dayanıklı",
         "images":  [
                        "images/catalog/taktikpantolon1.jpg",
@@ -180,7 +180,7 @@ window.PRODUCTS = [
         "typeLabel":  "Şort Pantolon",
         "name":  "Şort Pantolon",
         "code":  "DK-SR-622",
-        "price":  50,
+        "price":  550,
         "badge":  null,
         "images":  [
                        "images/catalog/shorts.jpg"
