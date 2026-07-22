@@ -144,7 +144,10 @@ window.PRODUCTS = [
         "price":  null,
         "badge":  "Dayanıklı",
         "images":  [
-                       "images/catalog/pants.jpg"
+                       "images/catalog/taktikpantolon1.jpg",
+                        "images/catalog/taktikpantolon2.jpg",
+                        "images/catalog/taktikpantolon3.jpg",
+                        "images/catalog/taktikpantolon4.jpg"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
