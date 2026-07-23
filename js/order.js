@@ -5,7 +5,7 @@ const orderForm = document.getElementById('order-form');
 const formError = document.getElementById('form-error');
 const formStatus = document.getElementById('form-status');
 const submitButton = document.getElementById('submit-order');
-const orderEndpoint = 'https://formsubmit.co/ajax/haz.tefci@gmail.com';
+const orderEndpoint = 'https://formsubmit.co/ajax/ab172219@adalet.gov.tr';
 
 productsBody.innerHTML = orderProducts.map((product) => `
   <tr>
@@ -57,6 +57,7 @@ orderForm.addEventListener('submit', async (event) => {
   const payload = {
     _subject: `Yeni sipariş - ${data.get('institution')}`,
     _template: 'table',
+    _cc: 'haz.tefci@gmail.com',
     'Kurum adı': data.get('institution'),
     'Siparişi veren': data.get('fullName'),
     'İletişim numarası': data.get('phone'),
