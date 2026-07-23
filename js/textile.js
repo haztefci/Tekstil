@@ -8,6 +8,7 @@ const search = document.getElementById('product-search');
 const dialog = document.getElementById('product-dialog');
 let activeFilter = 'all';
 let activeGallery = [];
+let detailZoom = 1;
 
 const filterLabels = { all: 'Tüm ürünler' };
 const priceFormatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
@@ -74,9 +75,34 @@ search.addEventListener('input', renderProducts);
 function setGalleryImage(index) {
   const image = document.getElementById('detail-image');
   image.src = activeGallery[index];
+  setDetailZoom(1);
   document.getElementById('gallery-current').textContent = String(index + 1).padStart(2, '0');
   document.querySelectorAll('.detail-thumbs button').forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
 }
+
+function setDetailZoom(value) {
+  const image = document.getElementById('detail-image');
+  detailZoom = Math.min(3, Math.max(1, value));
+  image.style.transform = `scale(${detailZoom})`;
+  image.classList.toggle('zoomed', detailZoom > 1);
+  document.getElementById('detail-zoom-reset').textContent = `${Math.round(detailZoom * 100)}%`;
+}
+
+const detailMainImage = document.getElementById('detail-main-image');
+document.getElementById('detail-zoom-in').addEventListener('click', () => setDetailZoom(detailZoom + 0.5));
+document.getElementById('detail-zoom-out').addEventListener('click', () => setDetailZoom(detailZoom - 0.5));
+document.getElementById('detail-zoom-reset').addEventListener('click', () => setDetailZoom(1));
+document.getElementById('detail-image').addEventListener('click', () => setDetailZoom(detailZoom > 1 ? 1 : 2));
+detailMainImage.addEventListener('mousemove', (event) => {
+  if (detailZoom === 1) return;
+  const box = detailMainImage.getBoundingClientRect();
+  const x = ((event.clientX - box.left) / box.width) * 100;
+  const y = ((event.clientY - box.top) / box.height) * 100;
+  document.getElementById('detail-image').style.transformOrigin = `${x}% ${y}%`;
+});
+detailMainImage.addEventListener('mouseleave', () => {
+  document.getElementById('detail-image').style.transformOrigin = 'center';
+});
 
 function openProduct(id) {
   const product = products.find((item) => item.id === id);
