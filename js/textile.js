@@ -116,4 +116,54 @@ dialog.addEventListener('click', (event) => {
 });
 dialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
 
+const customSlider = document.getElementById('custom-slider');
+const customSliderPrev = document.getElementById('custom-slider-prev');
+const customSliderNext = document.getElementById('custom-slider-next');
+const customSliderMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let customSliderTimer;
+
+function scrollCustomSlider(direction) {
+  const slide = customSlider.querySelector('.custom-slide');
+  const gap = parseFloat(getComputedStyle(customSlider).gap) || 0;
+  const step = slide.offsetWidth + gap;
+  const atEnd = customSlider.scrollLeft + customSlider.clientWidth >= customSlider.scrollWidth - 4;
+  const atStart = customSlider.scrollLeft <= 4;
+
+  if (direction > 0 && atEnd) {
+    customSlider.scrollTo({ left: 0, behavior: 'smooth' });
+  } else if (direction < 0 && atStart) {
+    customSlider.scrollTo({ left: customSlider.scrollWidth, behavior: 'smooth' });
+  } else {
+    customSlider.scrollBy({ left: direction * step, behavior: 'smooth' });
+  }
+}
+
+function stopCustomSlider() {
+  window.clearInterval(customSliderTimer);
+}
+
+function startCustomSlider() {
+  stopCustomSlider();
+  if (customSliderMotion.matches || document.hidden) return;
+  customSliderTimer = window.setInterval(() => scrollCustomSlider(1), 2500);
+}
+
+customSliderPrev.addEventListener('click', () => {
+  scrollCustomSlider(-1);
+  startCustomSlider();
+});
+customSliderNext.addEventListener('click', () => {
+  scrollCustomSlider(1);
+  startCustomSlider();
+});
+customSlider.addEventListener('mouseenter', stopCustomSlider);
+customSlider.addEventListener('mouseleave', startCustomSlider);
+customSlider.addEventListener('focusin', stopCustomSlider);
+customSlider.addEventListener('focusout', startCustomSlider);
+customSlider.addEventListener('touchstart', stopCustomSlider, { passive: true });
+customSlider.addEventListener('touchend', startCustomSlider, { passive: true });
+document.addEventListener('visibilitychange', startCustomSlider);
+customSliderMotion.addEventListener('change', startCustomSlider);
+
 renderProducts();
+startCustomSlider();

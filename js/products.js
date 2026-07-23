@@ -8,14 +8,13 @@ window.PRODUCTS = [
         "type":  "tisort",
         "groupLabel":  "Üst Giyim",
         "typeLabel":  "Taktik Tişört",
-        "name":  "Bisiklet Yaka Tişört",
+        "name":  "Taktik Tişört",
         "code":  "DK-TS-101",
         "price":  null,
         "badge":  "Çok tercih edilen",
         "images":  [
-                       "images/catalog/tshirt-white.jpg",
-                       "images/catalog/tshirt-black.jpg",
-                       "images/catalog/tshirt-green.jpg"
+                       "images/catalog/tisort1.jpg"
+        
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
