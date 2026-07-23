@@ -75,7 +75,7 @@ window.PRODUCTS = [
         "type":  "gomlek",
         "groupLabel":  "Üst Giyim",
         "typeLabel":  "Taktik Gömlek",
-        "name":  "Uzun Kollu Gömlek",
+        "name":  "Taktik Gömlek",
         "code":  "DK-GM-312",
         "price":  700,
         "badge":  null,
