@@ -5,7 +5,7 @@ const orderForm = document.getElementById('order-form');
 const formError = document.getElementById('form-error');
 const formStatus = document.getElementById('form-status');
 const submitButton = document.getElementById('submit-order');
-const orderEndpoint = 'https://formsubmit.co/ajax/etipicikisyurdu@hotmail.com';
+const orderEndpoint = 'https://formsubmit.co/ajax/haz.tefci@gmail.com';
 
 productsBody.innerHTML = orderProducts.map((product) => `
   <tr>
@@ -57,7 +57,7 @@ orderForm.addEventListener('submit', async (event) => {
   const payload = {
     _subject: `Yeni sipariş - ${data.get('institution')}`,
     _template: 'table',
-    _cc: 'haz.tefci@gmail.com',
+    _cc: 'etipicikisyurdu@hotmail.com',
     'Kurum adı': data.get('institution'),
     'Siparişi veren': data.get('fullName'),
     'İletişim numarası': data.get('phone'),
@@ -74,13 +74,15 @@ orderForm.addEventListener('submit', async (event) => {
       body: JSON.stringify(payload)
     });
     const result = await response.json().catch(() => ({}));
-    if (!response.ok || result.success === 'false' || result.success === false) throw new Error('Gönderim başarısız');
+    if (!response.ok || result.success === 'false' || result.success === false) {
+      throw new Error(result.message || 'Gönderim servisi isteği reddetti.');
+    }
 
     orderForm.reset();
     formStatus.textContent = 'Siparişiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.';
     formStatus.hidden = false;
   } catch (error) {
-    formError.textContent = 'Sipariş gönderilemedi. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.';
+    formError.textContent = `Sipariş gönderilemedi: ${error.message}`;
     formError.hidden = false;
   } finally {
     submitButton.disabled = false;
