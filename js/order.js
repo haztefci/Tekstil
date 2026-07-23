@@ -5,7 +5,7 @@ const orderForm = document.getElementById('order-form');
 const formError = document.getElementById('form-error');
 const formStatus = document.getElementById('form-status');
 const submitButton = document.getElementById('submit-order');
-const orderEndpoint = 'https://formsubmit.co/ajax/ab172219@adalet.gov.tr';
+const orderEndpoint = 'https://formsubmit.co/ajax/etipicikisyurdu@hotmail.com';
 
 productsBody.innerHTML = orderProducts.map((product) => `
   <tr>
