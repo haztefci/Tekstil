@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/textile.css?v=3">
+  <link rel="stylesheet" href="css/textile.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#catalog">Kataloğa geç</a>
@@ -144,7 +144,15 @@
     <button class="dialog-close" type="button" aria-label="Ürün detayını kapat">×</button>
     <div class="detail-layout">
       <div class="detail-gallery">
-        <div class="detail-main-image"><img id="detail-image" src="" alt=""></div>
+        <div class="detail-main-image" id="detail-main-image">
+          <img id="detail-image" src="" alt="">
+          <div class="detail-zoom-controls" aria-label="Fotoğraf yakınlaştırma kontrolleri">
+            <button type="button" id="detail-zoom-out" aria-label="Fotoğrafı küçült">−</button>
+            <button type="button" id="detail-zoom-reset" aria-label="Yakınlaştırmayı sıfırla">100%</button>
+            <button type="button" id="detail-zoom-in" aria-label="Fotoğrafı büyüt">+</button>
+          </div>
+          <span class="detail-zoom-hint">Yakınlaştırmak için tıklayın</span>
+        </div>
         <div class="detail-thumbs" id="detail-thumbs" aria-label="Ürün fotoğrafları"></div>
         <div class="gallery-counter"><span id="gallery-current">01</span> / <span id="gallery-total">01</span></div>
       </div>
@@ -175,6 +183,6 @@
   </dialog>
 
   <script src="js/products.js"></script>
-  <script src="js/textile.js"></script>
+  <script src="js/textile.js?v=2"></script>
 </body>
 </html>
