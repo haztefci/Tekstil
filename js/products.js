@@ -154,7 +154,7 @@ window.PRODUCTS = [
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
         "colors":  [
                        "#4b5320",
-                       "#FFFDD0",
+                       "#A9A9A9",
                       "#333333",
                        "#000000"
                    ],
