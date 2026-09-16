@@ -77,7 +77,7 @@ window.PRODUCTS = [
         "typeLabel":  "Taktik Gömlek",
         "name":  "Taktik Gömlek",
         "code":  "DK-GM-312",
-        "price":  700,
+        "price":  1000,
         "badge":  null,
         "images":  [
                        "images/catalog/taktikgomlek1.jpg",
