@@ -223,8 +223,11 @@ window.PRODUCTS = [
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme eldiven.",
         "colors":  [
-                       "#a8c2d4",
-                       "#344d63"
+            "#1800b7",
+            "#000000",
+            "#ff00ba",
+            "#120034",
+            "#ffffff"
                    ],
         "sizes":  [
                       "Tek beden"
@@ -257,8 +260,11 @@ window.PRODUCTS = [
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme bere.",
         "colors":  [
-                       "#a8c2d4",
-                       "#344d63"
+            "#1800b7",
+            "#000000",
+            "#ff00ba",
+            "#120034",
+            "#ffffff"
                    ],
         "sizes":  [
                       "Tek beden"
