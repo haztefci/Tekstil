@@ -203,5 +203,35 @@ window.PRODUCTS = [
         "weight":  "260 g/m²",
         "fit":  "Rahat kesim",
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+
+      {
+        "id":  "Eldiven",
+        "active":  true,
+        "group":  "aksesuar",
+        "type":  "Eldiven",
+        "groupLabel":  "Aksesuar Giyim",
+        "typeLabel":  "Eldiven",
+        "name":  "Eldiven",
+        "code":  "DK-SR-623",
+        "price":  65,
+        "badge":  null,
+        "images":  [
+                       "images/catalog/eldiven1.jpg",
+            "images/catalog/eldiven2.jpg"
+        
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme eldiven.",
+        "colors":  [
+                       "#a8c2d4",
+                       "#344d63"
+                   ],
+        "sizes":  [
+                      "Tek beden"
+                  ],
+        "fabric":  "%100 pamuk akrilik",
+        "weight":  "260 g/m²",
+        "fit":  "Rahat kullanım",
+        "care":  "30°C yıkayınız."
     }
 ];
