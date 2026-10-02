@@ -273,5 +273,37 @@ window.PRODUCTS = [
         "weight":  "70-80 gram",
         "fit":  "Rahat kullanım",
         "care":  "30°C yıkayınız."
+    },
+              {
+        "id":  "Atkı",
+        "active":  true,
+        "group":  "aksesuar",
+        "type":  "Atkı",
+        "groupLabel":  "Aksesuar Giyim",
+        "typeLabel":  "Atkı",
+        "name":  "Atkı",
+        "code":  "DK-SR-625",
+        "price":  100,
+        "badge":  null,
+        "images":  [
+            "images/catalog/atki1.jpeg",
+            "images/catalog/atki2.jpeg"
+        
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme atkı.",
+        "colors":  [
+            "#1800b7",
+            "#000000",
+            "#ff00ba",
+            "#120034",
+            "#ffffff"
+                   ],
+        "sizes":  [
+                      "Tek beden"
+                  ],
+        "fabric":  "%100 akrilik ip",
+        "weight":  "90-100 gram",
+        "fit":  "Rahat kullanım",
+        "care":  "30°C yıkayınız."
     }
 ];
