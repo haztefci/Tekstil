@@ -305,5 +305,40 @@ window.PRODUCTS = [
         "weight":  "90-100 gram",
         "fit":  "Rahat kullanım",
         "care":  "30°C yıkayınız."
+    },
+                  {
+        "id":  "Patik",
+        "active":  true,
+        "group":  "aksesuar",
+        "type":  "Patik",
+        "groupLabel":  "Aksesuar Giyim",
+        "typeLabel":  "Patik",
+        "name":  "Patik",
+        "code":  "DK-SR-626",
+        "price":  50,
+        "badge":  null,
+        "images":  [
+            "images/catalog/patik1.jpeg",
+            "images/catalog/patik2.jpeg",
+            "images/catalog/patik3.jpeg",
+            "images/catalog/patik4.jpeg",
+            "images/catalog/patik5.jpeg"
+        
+                   ],
+        "description":  "Günlük kullanıma uygun, örme bebek patiği.",
+        "colors":  [
+            "#1800b7",
+            "#000000",
+            "#ff00ba",
+            "#120034",
+            "#ffffff"
+                   ],
+        "sizes":  [
+                      "Tek beden"
+                  ],
+        "fabric":  "%100 akrilik ip",
+        "weight":  "20-25 gram",
+        "fit":  "Rahat kullanım",
+        "care":  "30°C yıkayınız."
     }
 ];
