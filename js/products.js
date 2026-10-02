@@ -217,8 +217,8 @@ window.PRODUCTS = [
         "price":  65,
         "badge":  null,
         "images":  [
-                       "images/catalog/eldiven1.jpg",
-            "images/catalog/eldiven2.jpg"
+                       "images/catalog/eldiven1.jpeg",
+            "images/catalog/eldiven2.jpeg"
         
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme eldiven.",
