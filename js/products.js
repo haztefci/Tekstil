@@ -229,8 +229,42 @@ window.PRODUCTS = [
         "sizes":  [
                       "Tek beden"
                   ],
-        "fabric":  "%100 pamuk akrilik",
-        "weight":  "260 g/m²",
+        "fabric":  "%100 akrilik iplik",
+        "weight":  "60-70 gram",
+        "fit":  "Rahat kullanım",
+        "care":  "30°C yıkayınız."
+    },
+          {
+        "id":  "Bere",
+        "active":  true,
+        "group":  "aksesuar",
+        "type":  "Bere",
+        "groupLabel":  "Aksesuar Giyim",
+        "typeLabel":  "Bere",
+        "name":  "Bere",
+        "code":  "DK-SR-624",
+        "price":  75,
+        "badge":  null,
+        "images":  [
+            "images/catalog/bere1.jpeg",
+            "images/catalog/bere2.jpeg",
+            "images/catalog/bere3.jpeg",
+            "images/catalog/bere4.jpeg",
+            "images/catalog/bere5.jpeg",
+            "images/catalog/bere6.jpeg",
+            "images/catalog/bere7.jpeg"
+        
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, örme bere.",
+        "colors":  [
+                       "#a8c2d4",
+                       "#344d63"
+                   ],
+        "sizes":  [
+                      "Tek beden"
+                  ],
+        "fabric":  "%100 akrilik ip",
+        "weight":  "70-80 gram",
         "fit":  "Rahat kullanım",
         "care":  "30°C yıkayınız."
     }
