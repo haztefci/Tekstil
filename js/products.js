@@ -116,11 +116,12 @@ window.PRODUCTS = [
         "price":  1250,
         "badge":  null,
         "images":  [
-                       "images/catalog/mevsimlikmont1.jpg",
-                       "images/catalog/mevsimlikmont2.jpg",
-                        "images/catalog/mevsimlikmont3.jpg"
+                       "images/catalog/mevsimlikmont1.JPG",
+                       "images/catalog/mevsimlikmont2.JPG",
+                        "images/catalog/mevsimlikmont3.JPG",
+            "images/catalog/mevsimlikmont4.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Mevsimlik Mont.",
         "colors":  [
                        "#4a241d",
                        "#171713",
