@@ -430,5 +430,34 @@ window.PRODUCTS = [
         "weight":  "20-25 gram",
         "fit":  "Rahat kullanım",
         "care":  "30°C yıkayınız."
+    },
+      {
+        "id":  "mutfakhavlusu",
+        "active":  true,
+        "group":  "evtekstili",
+        "type":  "mutfakhavlusu",
+        "groupLabel":  "Ev Tekstili",
+        "typeLabel":  "Mutfak Havlusu 3'lü",
+        "name":  "Mutfak Havlusu 3'lü",
+        "code":  "DK-SR-627",
+        "price":  100,
+        "badge":  null,
+        "images":  [
+            "images/catalog/mutfakhavlusu1",
+            "images/catalog/mutfakhavlusu2"
+        
+        
+                   ],
+        "description":  "Mutfak kullanımına uygun 3'lü Mutfak Havlusu.",
+        "colors":  [
+                   "#ffffff"
+                   ],
+        "sizes":  [
+                      "Tek beden"
+                  ],
+        "fabric":  "%100 akrilik ip",
+        "weight":  "20-25 gram",
+        "fit":  "Rahat kullanım",
+        "care":  "30°C yıkayınız."
     }
 ];
