@@ -443,8 +443,8 @@ window.PRODUCTS = [
         "price":  100,
         "badge":  null,
         "images":  [
-            "images/catalog/mutfakhavlusu1",
-            "images/catalog/mutfakhavlusu2"
+            "images/catalog/mutfakhavlusu1.JPG",
+            "images/catalog/mutfakhavlusu2.JPG"
         
         
                    ],
