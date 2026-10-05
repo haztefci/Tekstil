@@ -155,23 +155,23 @@ window.PRODUCTS = [
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
-        "id":  "kaban",
+        "id":  "parka",
         "active":  true,
         "group":  "ust",
-        "type":  "kaban",
+        "type":  "parka",
         "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Kapşonlu Kaban",
-        "name":  "Kapşonlu Kaban",
+        "typeLabel":  "Kapşonlu Parka",
+        "name":  "Kapşonlu Parka",
         "code":  "DK-MT-409",
         "price":  1350,
         "badge":  null,
         "images":  [
-                       "images/catalog/kapsonlukaban1.JPG",
-                       "images/catalog/kapsonlukaban2.JPG",
-                        "images/catalog/kapsonlukaban3.JPG",
-                        "images/catalog/kapsonlukaban4.JPG"
+                       "images/catalog/kapsonluparka1.JPG",
+                       "images/catalog/kapsonluparka2.JPG",
+                        "images/catalog/kapsonluparka3.JPG",
+                        "images/catalog/kapsonluparka4.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Kapşonlu Kaban.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Kapşonlu Parka.",
         "colors":  [
                        "#4a241d",
                        "#171713",
