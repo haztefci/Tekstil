@@ -82,6 +82,42 @@ window.PRODUCTS = [
         "fit":  "Rahat kalıp",
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
+        {
+        "id":  "kapsonlupolar",
+        "active":  true,
+        "group":  "ust",
+        "type":  "kapsonlupolar",
+        "groupLabel":  "Üst Giyim",
+        "typeLabel":  "Kapşonlu Polar",
+        "name":  "Kapşonlu Polar",
+        "code":  "DK-SW-205",
+        "price":  750,
+        "badge":  "Yeni",
+        "images":  [
+            "images/catalog/kapsonlupolar1.JPG",
+            "images/catalog/kapsonlupolar2.JPG",
+            "images/catalog/kapsonlupolar3.JPG",
+            "images/catalog/kapsonlupolar4.JPG"
+    
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Kapşonlu Polar.",
+        "colors":  [
+                       "#793f28",
+                       "#222",
+                       "#d6cab8"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%80 pamuk, %20 polyester",
+        "weight":  "320 g/m²",
+        "fit":  "Rahat kalıp",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
     {
         "id":  "keten-gomlek",
         "active":  true,
