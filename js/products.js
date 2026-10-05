@@ -2,21 +2,25 @@
 // DeÄŸiÅŸikliklerinizi Access dosyasÄ±nda yapÄ±p tools\access-to-products.ps1 dosyasÄ±nÄ± Ã§alÄ±ÅŸtÄ±rÄ±n.
 window.PRODUCTS = [
     {
-        "id":  "premium-tisort",
+        "id":  "bayanpolar",
         "active":  true,
         "group":  "ust",
-        "type":  "tisort",
+        "type":  "bayanpolar",
         "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Taktik Tişört",
-        "name":  "Taktik Tişört",
+        "typeLabel":  "Bayan Polar",
+        "name":  "Bayan Polar",
         "code":  "DK-TS-101",
-        "price":  null,
+        "price":  700,
         "badge":  "Çok tercih edilen",
         "images":  [
-                       "images/catalog/tisort1.jpg"
+            "images/catalog/bayanpolar1.JPG",
+            "images/catalog/bayanpolar2.JPG",
+            "images/catalog/bayanpolar3.JPG",
+            "images/catalog/bayanpolar4.JPG",
+            "images/catalog/bayanpolar5.JPG"
         
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, bayan polar.",
         "colors":  [
                        "#f5f3ed",
                        "#1b1b1b",
