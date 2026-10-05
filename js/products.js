@@ -80,10 +80,14 @@ window.PRODUCTS = [
         "price":  1000,
         "badge":  null,
         "images":  [
-                       "images/catalog/taktikgomlek1.jpg",
-                       "images/catalog/taktikgomlek2.jpg"
+            "images/catalog/taktikgomlek1.JPG",
+            "images/catalog/taktikgomlek2.JPG",
+            "images/catalog/taktikgomlek3.JPG",
+            "images/catalog/taktikgomlek4.JPG",
+            "images/catalog/taktikgomlek5.JPG",
+            "images/catalog/taktikgomlek6.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Taktik Gömlek.",
         "colors":  [
                        "#263c56",
                        "#e8e2d7",
