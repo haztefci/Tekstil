@@ -155,13 +155,48 @@ window.PRODUCTS = [
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
+        "id":  "kaban",
+        "active":  true,
+        "group":  "ust",
+        "type":  "kaban",
+        "groupLabel":  "Üst Giyim",
+        "typeLabel":  "Kapşonlu Kaban",
+        "name":  "Kapşonlu Kaban",
+        "code":  "DK-MT-409",
+        "price":  1350,
+        "badge":  null,
+        "images":  [
+                       "images/catalog/kapsonlukaban1.JPG",
+                       "images/catalog/kapsonlukaban2.JPG",
+                        "images/catalog/kapsonlukaban3.JPG",
+                        "images/catalog/kapsonlukaban4.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Kapşonlu Kaban.",
+        "colors":  [
+                       "#4a241d",
+                       "#171713",
+                       "#6a7068"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "Kaplamalı dokuma kumaş",
+        "weight":  "380 g/m²",
+        "fit":  "Regular fit",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+    {
         "id":  "urban-mont",
         "active":  true,
         "group":  "ust",
         "type":  "mont",
         "groupLabel":  "Üst Giyim",
         "typeLabel":  "Mevsimlik Mont",
-        "name":  "Mevsimlik Taktik Mont",
+        "name":  "Mevsimlik Mont",
         "code":  "DK-MT-408",
         "price":  1250,
         "badge":  null,
