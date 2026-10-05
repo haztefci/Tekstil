@@ -37,20 +37,30 @@ window.PRODUCTS = [
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
-        "id":  "soft-sweatshirt",
+        "id":  "taktikpolar",
         "active":  true,
         "group":  "ust",
-        "type":  "sweatshirt",
+        "type":  "taktikpolar",
         "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Sweatshirt",
-        "name":  "Uzun Kollu Sweatshirt",
+        "typeLabel":  "Taktik Polar",
+        "name":  "Taktik Polar",
         "code":  "DK-SW-204",
-        "price":  null,
+        "price":  700,
         "badge":  "Yeni",
         "images":  [
-                       "images/catalog/sweatshirt.jpg"
+            "images/catalog/taktikpolar1.JPG",
+            "images/catalog/taktikpolar2.JPG",
+            "images/catalog/taktikpolar3.JPG",
+            "images/catalog/taktikpolar4.JPG",
+            "images/catalog/taktikpolar5.JPG",
+            "images/catalog/taktikpolar6.JPG",
+            "images/catalog/taktikpolar7.JPG",
+            "images/catalog/taktikpolar8.JPG",
+            "images/catalog/taktikpolar9.JPG",
+            "images/catalog/taktikpolar10.JPG"
+    
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Taktik Polar.",
         "colors":  [
                        "#793f28",
                        "#222",
