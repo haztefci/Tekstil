@@ -128,7 +128,7 @@ window.PRODUCTS = [
         "name":  "Taktik Gömlek",
         "code":  "DK-GM-312",
         "price":  1000,
-        "badge":  null,
+        "badge":  "EN ÇOK TERCİH EDİLEN",
         "images":  [
             "images/catalog/taktikgomlek1.JPG",
             "images/catalog/taktikgomlek2.JPG",
@@ -242,7 +242,7 @@ window.PRODUCTS = [
         "name":  "Taktik Pantolon",
         "code":  "DK-PT-510",
         "price":  1100,
-        "badge":  "Dayanıklı",
+        "badge":  "EN ÇOK TERCİH EDİLEN",
         "images":  [
                        "images/catalog/taktikpantolon1.JPG",
                        "images/catalog/taktikpantolon2.JPG",
@@ -261,13 +261,12 @@ window.PRODUCTS = [
                    ],
         "sizes":  [
                     
-                      "38",
-                      "40",
-                        "42",
-                        "44",
-                        "46",
-                        "48",
-                        "50"
+                    "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
                   ],
         "fabric":  "%97 pamuk, %3 elastan",
         "weight":  "285 g/m²",
