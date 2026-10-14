@@ -135,7 +135,9 @@ window.PRODUCTS = [
             "images/catalog/taktikgomlek3.JPG",
             "images/catalog/taktikgomlek4.JPG",
             "images/catalog/taktikgomlek5.JPG",
-            "images/catalog/taktikgomlek6.JPG"
+            "images/catalog/taktikgomlek6.JPG",
+            "images/catalog/taktikgomlek7.JPG",
+            "images/catalog/taktikgomlek8.JPG"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Taktik Gömlek.",
         "colors":  [
@@ -147,7 +149,8 @@ window.PRODUCTS = [
                       "S",
                       "M",
                       "L",
-                      "XL"
+                      "XL",
+                      "2XL"
                   ],
         "fabric":  "%55 keten, %45 pamuk",
         "weight":  "165 g/m²",
@@ -164,12 +167,17 @@ window.PRODUCTS = [
         "name":  "Kapşonlu Parka",
         "code":  "DK-MT-409",
         "price":  1350,
-        "badge":  null,
+        "badge":  "Yeni",
         "images":  [
                        "images/catalog/kapsonluparka1.JPG",
                        "images/catalog/kapsonluparka2.JPG",
                         "images/catalog/kapsonluparka3.JPG",
-                        "images/catalog/kapsonluparka4.JPG"
+                        "images/catalog/kapsonluparka4.JPG",
+                        "images/catalog/kapsonluparka5.JPG",
+                        "images/catalog/kapsonluparka6.JPG",
+                        "images/catalog/kapsonluparka7.JPG",
+                        "images/catalog/kapsonluparka8.JPG",
+                        "images/catalog/kapsonluparka9.JPG"
                    ],
         "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Kapşonlu Parka.",
         "colors":  [
@@ -236,12 +244,15 @@ window.PRODUCTS = [
         "price":  1100,
         "badge":  "Dayanıklı",
         "images":  [
-                       "images/catalog/taktikpantolon1.jpg",
-                       "images/catalog/taktikpantolon2.jpg",
-                       "images/catalog/taktikpantolon3.jpg",
-                       "images/catalog/taktikpantolon4.jpg"
+                       "images/catalog/taktikpantolon1.JPG",
+                       "images/catalog/taktikpantolon2.JPG",
+                       "images/catalog/taktikpantolon3.JPG",
+                       "images/catalog/taktikpantolon4.JPG",
+                        "images/catalog/taktikpantolon5.JPG",
+                        "images/catalog/taktikpantolon6.JPG",
+                        "images/catalog/taktikpantolon7.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, taktik pantolon.",
         "colors":  [
                        "#4b5320",
                        "#A9A9A9",
@@ -249,12 +260,14 @@ window.PRODUCTS = [
                        "#000000"
                    ],
         "sizes":  [
-                      "28",
-                      "30",
-                      "32",
-                      "34",
-                      "36",
-                      "38"
+                    
+                      "38",
+                      "40",
+                        "42",
+                        "44",
+                        "46",
+                        "48",
+                        "50"
                   ],
         "fabric":  "%97 pamuk, %3 elastan",
         "weight":  "285 g/m²",
@@ -262,32 +275,32 @@ window.PRODUCTS = [
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
-        "id":  "denim-sort",
+        "id":  "esofman-ust",
         "active":  true,
-        "group":  "alt",
-        "type":  "sort",
-        "groupLabel":  "Alt Giyim",
-        "typeLabel":  "Şort Pantolon",
-        "name":  "Şort Pantolon",
+        "group":  "ust",
+        "type":  "esofman-ust",
+        "groupLabel":  "Üst Giyim",
+        "typeLabel":  "Eşofman Üstü",
+        "name":  "Eşofman Üstü",
         "code":  "DK-SR-622",
         "price":  550,
         "badge":  null,
         "images":  [
-                       "images/catalog/sort1.jpg",
-            "images/catalog/sort2.jpg",
-            "images/catalog/sort3.jpg"
+            "images/catalog/esofmanust1.JPG",
+            "images/catalog/esofmanust2.JPG",
+            "images/catalog/esofmanust3.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, tok tutumlu penye kumaştan Üretilen zamansız bisiklet yaka tişört.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Eşofman Üstü.",
         "colors":  [
                        "#a8c2d4",
                        "#344d63"
                    ],
         "sizes":  [
-                      "26",
-                      "28",
-                      "30",
-                      "32",
-                      "34"
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
                   ],
         "fabric":  "%100 pamuk denim",
         "weight":  "260 g/m²",
