@@ -157,6 +157,43 @@ window.PRODUCTS = [
         "fit":  "Modern fit",
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
+{
+        "id":  "softshell",
+        "active":  true,
+        "group":  "ust",
+        "type":  "softshell",
+        "groupLabel":  "Üst Giyim",
+        "typeLabel":  "Softshell Mont",
+        "name":  "Softshell Mont",
+        "code":  "DK-MT-429",
+        "price":  1250,
+        "badge":  "Yeni",
+        "images":  [
+                       "images/catalog/soft1.JPG",
+                       "images/catalog/soft2.JPG",
+                        "images/catalog/soft3.JPG",
+                        "images/catalog/soft4.JPG"
+                        
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Softshell Mont.",
+        "colors":  [
+                       "#4a241d",
+                       "#171713",
+                       "#6a7068"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "Kaplamalı dokuma kumaş",
+        "weight":  "380 g/m²",
+        "fit":  "Regular fit",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+    
     {
         "id":  "parka",
         "active":  true,
@@ -233,6 +270,40 @@ window.PRODUCTS = [
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
     {
+        "id":  "esofman-ust",
+        "active":  true,
+        "group":  "ust",
+        "type":  "esofman-ust",
+        "groupLabel":  "Üst Giyim",
+        "typeLabel":  "Eşofman Üstü",
+        "name":  "Eşofman Üstü",
+        "code":  "DK-SR-622",
+        "price":  550,
+        "badge":  null,
+        "images":  [
+            "images/catalog/esofmanust1.JPG",
+            "images/catalog/esofmanust2.JPG",
+            "images/catalog/esofmanust3.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Eşofman Üstü.",
+        "colors":  [
+                       "#a8c2d4",
+                       "#344d63"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%100 pamuk denim",
+        "weight":  "260 g/m²",
+        "fit":  "Rahat kesim",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+
+    {
         "id":  "kanvas-pantolon",
         "active":  true,
         "group":  "alt",
@@ -273,23 +344,183 @@ window.PRODUCTS = [
         "fit":  "Düz kesim",
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
+        {
+        "id":  "teknikpantolon",
+        "active":  true,
+        "group":  "alt",
+        "type":  "teknikpantolon",
+        "groupLabel":  "Alt Giyim",
+        "typeLabel":  "Teknik Pantolon",
+        "name":  "Teknik Pantolon",
+        "code":  "DK-PT-520",
+        "price":  750,
+        "badge":  "YENİ",
+        "images":  [
+                       "images/catalog/teknikpantolon1.JPG",
+                       "images/catalog/teknikpantolon2.JPG",
+                       "images/catalog/teknikpantolon3.JPG",
+                       "images/catalog/teknikpantolon4.JPG",
+                        "images/catalog/teknikpantolon5.JPG",
+                        "images/catalog/teknikpantolon6.JPG",
+                        "images/catalog/teknikpantolon7.JPG",
+            "images/catalog/teknikpantolon8.JPG",
+            "images/catalog/teknikpantolon9.JPG",
+            "images/catalog/teknikpantolon10.JPG",
+            "images/catalog/teknikpantolon11.JPG",
+            "images/catalog/teknikpantolon12.JPG",
+            "images/catalog/teknikpantolon13.JPG",
+            "images/catalog/teknikpantolon14.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, teknik pantolon.",
+        "colors":  [
+                       "#4b5320",
+                       "#A9A9A9",
+                      "#333333",
+                       "#000000"
+                   ],
+        "sizes":  [
+                    
+                    "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%97 pamuk, %3 elastan",
+        "weight":  "285 g/m²",
+        "fit":  "Düz kesim",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+    ,
+        {
+        "id":  "sort",
+        "active":  true,
+        "group":  "alt",
+        "type":  "sort",
+        "groupLabel":  "Alt Giyim",
+        "typeLabel":  "Şort Pantolon",
+        "name":  "Şort Pantolon",
+        "code":  "DK-PT-530",
+        "price":  550,
+        "badge":  "YENİ",
+        "images":  [
+                       "images/catalog/sort1.JPG",
+                       "images/catalog/sort2.JPG",
+                       "images/catalog/sort3.JPG",
+                       "images/catalog/sort4.JPG",
+                        "images/catalog/sort5.JPG",
+            "images/catalog/sort6.JPG",
+            "images/catalog/sort7.JPG",
+            "images/catalog/sort8.JPG",
+            "images/catalog/sort9.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, şort pantolon.",
+        "colors":  [
+                       "#4b5320",
+                       "#A9A9A9",
+                      "#333333",
+                       "#000000"
+                   ],
+        "sizes":  [
+                    
+                    "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%97 pamuk, %3 elastan",
+        "weight":  "285 g/m²",
+        "fit":  "Düz kesim",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
     {
-        "id":  "esofman-ust",
+        "id":  "sifiryakaatlet",
         "active":  true,
         "group":  "ust",
-        "type":  "esofman-ust",
+        "type":  "sifiryakaatlet",
         "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Eşofman Üstü",
-        "name":  "Eşofman Üstü",
-        "code":  "DK-SR-622",
-        "price":  550,
+        "typeLabel":  "Sıfır Yaka Atlet",
+        "name":  "Sıfır Yaka Atlet",
+        "code":  "DK-SR-632",
+        "price":  100,
         "badge":  null,
         "images":  [
-            "images/catalog/esofmanust1.JPG",
-            "images/catalog/esofmanust2.JPG",
-            "images/catalog/esofmanust3.JPG"
+            "images/catalog/sifiryakaatlet1.JPG",
+            "images/catalog/sifiryakaatlet2.JPG",
+            "images/catalog/sifiryakaatlet3.JPG"
                    ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Eşofman Üstü.",
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Sıfır yaka atlet.",
+        "colors":  [
+                       "#a8c2d4",
+                       "#344d63"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%100 pamuk denim",
+        "weight":  "260 g/m²",
+        "fit":  "Rahat kesim",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+{
+        "id":  "tayt",
+        "active":  true,
+        "group":  "alt",
+        "type":  "tayt",
+        "groupLabel":  "Alt Giyim",
+        "typeLabel":  "Spor Tayt",
+        "name":  "Spor Tayt",
+        "code":  "DK-SR-632",
+        "price":  250,
+        "badge":  "YENİ",
+        "images":  [
+            "images/catalog/tayt1.JPG",
+            "images/catalog/tayt2.JPG",
+            "images/catalog/tayt3.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Spor Tayt.",
+        "colors":  [
+                       "#a8c2d4",
+                       "#344d63"
+                   ],
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "2XL"
+                  ],
+        "fabric":  "%100 pamuk denim",
+        "weight":  "260 g/m²",
+        "fit":  "Rahat kesim",
+        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
+    },
+{
+        "id":  "pijama",
+        "active":  true,
+        "group":  "takım",
+        "type":  "pijama",
+        "groupLabel":  "Takım",
+        "typeLabel":  "Pijama Takımı",
+        "name":  "Pijama Takımı",
+        "code":  "DK-SR-662",
+        "price":  350,
+        "badge":  null,
+        "images":  [
+            "images/catalog/pijama1.JPG",
+            "images/catalog/pijama2.JPG",
+            "images/catalog/pijama3.JPG",
+            "images/catalog/pijama4.JPG",
+            "images/catalog/pijama5.JPG"
+                   ],
+        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Pijama Takımı.",
         "colors":  [
                        "#a8c2d4",
                        "#344d63"
