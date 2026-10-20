@@ -166,7 +166,7 @@ window.PRODUCTS = [
         "typeLabel":  "Softshell Mont",
         "name":  "Softshell Mont",
         "code":  "DK-MT-429",
-        "price":  1250,
+        "price":  1100,
         "badge":  "Yeni",
         "images":  [
                        "images/catalog/soft1.JPG",
@@ -436,40 +436,7 @@ window.PRODUCTS = [
         "fit":  "Düz kesim",
         "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
     },
-    {
-        "id":  "sifiryakaatlet",
-        "active":  true,
-        "group":  "ust",
-        "type":  "sifiryakaatlet",
-        "groupLabel":  "Üst Giyim",
-        "typeLabel":  "Sıfır Yaka Atlet",
-        "name":  "Sıfır Yaka Atlet",
-        "code":  "DK-SR-632",
-        "price":  100,
-        "badge":  null,
-        "images":  [
-            "images/catalog/sifiryakaatlet1.JPG",
-            "images/catalog/sifiryakaatlet2.JPG",
-            "images/catalog/sifiryakaatlet3.JPG"
-                   ],
-        "description":  "Günlük kullanıma ve kurumsal baskıya uygun, Sıfır yaka atlet.",
-        "colors":  [
-                       "#a8c2d4",
-                       "#344d63"
-                   ],
-        "sizes":  [
-                      "S",
-                      "M",
-                      "L",
-                      "XL",
-                      "2XL"
-                  ],
-        "fabric":  "%100 pamuk denim",
-        "weight":  "260 g/m²",
-        "fit":  "Rahat kesim",
-        "care":  "30°C tersten yıkayınız. Renk koruyucu deterjan kullanınız."
-    },
-{
+   {
         "id":  "tayt",
         "active":  true,
         "group":  "alt",
